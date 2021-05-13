@@ -8,8 +8,8 @@ const config = require('./config/database');
 
 // Connect To Database
 mongoose.Promise = require('bluebird');
-mongoose.connect(config.database, { useMongoClient: true, promiseLibrary: require('bluebird') })
-  .then(() => console.log(`Connected to database ${config.database}`))
+mongoose.connect(config.database, { useNewUrlParser: true, useUnifiedTopology: true  })
+  .then(() => console.log(`Connected to database`))
   .catch((err) => console.log(`Database error: ${err}`));
 
 const app = express();
