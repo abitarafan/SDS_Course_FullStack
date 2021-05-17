@@ -1,5 +1,4 @@
 node_modules
-learning_diary
 reference
 logger.js
 person.js
@@ -8,3 +7,4 @@ npm-debug.log
 .env
 .DS_Store
 nodeauthapp/config
+final-project
